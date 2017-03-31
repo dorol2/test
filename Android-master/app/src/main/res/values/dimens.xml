@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- dimen of main -->
+    <dimen name="activity_main_LinearLayout_horizontal_margin">16dp</dimen>
+    <dimen name="activity_main_LinearLayout_vertical_margin">16dp</dimen>
+    <dimen name="activity_main_horizontal_padding">16dp</dimen>
+    <dimen name="activity_main_imageview_constellation_horizontal_margin">20dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

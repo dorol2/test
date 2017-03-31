@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.goodgoodman.constellationdating.MainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--- 뒤로가기 버튼을 없애면서 LinearLayout으로 한 번 더 감쌀 필요가 없어짐
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        -->
+
+            <!-- 뒤로가기 버튼 삭제 (필요없는 것이라서)
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:elevation="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/back" />
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_main_LinearLayout_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_main_LinearLayout_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_main_LinearLayout_horizontal_margin"
+                android:background="#15ffffff"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_main_horizontal_padding"
+                android:paddingRight="@dimen/activity_main_horizontal_padding">
+
+                <ImageView
+                    android:id="@+id/constellation"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginLeft="@dimen/activity_main_imageview_constellation_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_main_imageview_constellation_horizontal_margin"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/constellation_imageview_contentdescription"/>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Songmoo Heo 28"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:paddingTop="4dp"
+                        android:scaleType="matrix" />
+
+                    <TextView
+                        android:id="@+id/matchedDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  access : Today"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="S"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/match"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:text="  match"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@android:color/transparent"
+                    android:text="let me introduce myself\nmy name is songmooHeo
+                        \nmy hobby is soccer\n...\nbye"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgView1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="20dp" />
+
+                        <ImageView
+                            android:id="@+id/imgView2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="20dp" />
+
+                        <ImageView
+                            android:id="@+id/imgView3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="20dp" />
+
+                        <ImageView
+                            android:id="@+id/imgView4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="20dp" />
+
+                        <ImageView
+                            android:id="@+id/imgView5"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="20dp" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/imgBlank"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="20dp" />
+         <!--   </LinearLayout>  뒤로가기 버튼 지운 결과-->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
